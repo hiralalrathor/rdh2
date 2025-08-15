@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Parent-Teacher Scheduler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label, input, select, textarea {
+      display: block;
+      margin: 0.5rem 0;
+      width: 100%;
+      padding: 0.5rem;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Auto Parent-Teacher Scheduler</h1>
+    <p>Effortless meeting coordination and reminders</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📅 Schedule a Meeting</h2>
+      <form id="scheduleForm">
+        <label for="parentName">Parent Name:</label>
+        <input type="text" id="parentName" name="parentName" required />
+
+        <label for="teacherName">Teacher Name:</label>
+        <input type="text" id="teacherName" name="teacherName" required />
+
+        <label for="meetingDate">Date:</label>
+        <input type="date" id="meetingDate" name="meetingDate" required />
+
+        <label for="meetingTime">Time:</label>
+        <input type="time" id="meetingTime" name="meetingTime" required />
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes" rows="3"></textarea>
+
+        <button type="submit">Schedule</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>🗓️ View Calendar</h2>
+      <p>Coming soon: Interactive calendar view with scheduled meetings.</p>
+    </section>
+
+    <section>
+      <h2>🔔 Send Reminders</h2>
+      <form id="reminderForm">
+        <label for="email">Parent Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="reminderMessage">Reminder Message:</label>
+        <textarea id="reminderMessage" name="reminderMessage" rows="3" required>
+Don't forget your meeting tomorrow!
+        </textarea>
+
+        <button type="submit">Send Reminder</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
